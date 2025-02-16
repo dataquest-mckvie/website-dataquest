@@ -1,0 +1,129 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+article{
+    position: relative;
+    top: 15vh;
+}
+#splash{
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    z-index: 110;
+}
+#splash img:first-child{
+    width: 50vw;
+    margin-bottom: 30px;
+    scale: 0.9;
+    animation: getBigger 2s infinite alternate;
+}
+@keyframes getBigger {
+    to{
+        scale: 1;
+    }
+}
+
+.loader{
+    width: 200px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: 10px;
+}
+.loader span{
+    border: 1px solid white;
+    width: 20px;
+    height: 20px;
+    display: inline-block;
+    background-color: white;
+    border-radius: 50%;
+    transition: all 0.2s ease-in-out;
+}
+.loader span.jump{
+    transform: translateY(-20px);
+}
+/* Body section */
+body{
+    background: rgb(20, 20, 20);
+    overflow-x: hidden;
+    overflow-y: visible;
+    position: relative;
+}
+body::-webkit-scrollbar{
+    width: 5px;
+    background: #cccccc;
+}
+body::-webkit-scrollbar-thumb{
+    width: 100%;
+    background: aqua;
+}
+
+#registerButtonDiv{
+    width: 120px;
+    height: 110px;
+    background: linear-gradient(120deg, #02e7e7,#e701ea);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    bottom: 5%;
+    right: 3%;
+    text-wrap: wrap;
+    padding: 10px;
+    text-align: center;
+    color:cornsilk;
+    font-size: 1.3rem;
+    font-weight: bold;
+    font-family: Helvetica, Arial, sans-serif;
+    z-index: 100;
+    cursor: pointer;
+}
+#registerButtonDiv::before{
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 50%;
+    z-index: -1;
+    animation: glow 1.3s infinite;
+    opacity: 1;
+    border: 2px solid #02e7e7
+}
+@keyframes glow{
+    50%{
+        opacity: 0.6;
+        padding: 1rem;
+    }
+    60%{
+        opacity: 0.5;
+        border: 2px solid transparent;
+    }
+    80%{
+        opacity: 0;
+        border: 2px solid transparent;
+    }
+    100%{
+        border: 2px solid transparent;
+    }
+}
+
+@media screen and (max-width: 800px){
+    #registerButtonDiv{
+        width: 100px;
+        height: 90px;
+        font-size: 1.1rem;
+    }
+}

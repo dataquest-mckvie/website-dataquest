@@ -1,0 +1,122 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+#roomNoBox{
+    position: relative;
+    top: 25vh;
+    width: 90%;
+    max-width: 700px;
+    height: 50vh;
+    left: 50%;
+    transform: translate(-50%,0);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(70,70,70);
+    border-radius: 20px;
+    padding: 10px 15px;
+    gap: 10px;
+}
+#roomNoInput, #roomNoOutput{
+    width: 100%;
+    padding: 10px;
+    font-size: 1.2rem;
+    color: white;
+}
+#roomNoInput{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: center;
+}
+#roomNoInput label{
+    font-family: Helvetica, sans-serif;
+    font-weight: bolder;
+    margin-bottom: 10px;
+}
+#roomNoInput input[type="number"]{
+    border: none;
+    outline: none;
+    background-color: white;
+    padding: 5px;
+    border-radius: 5px;
+    width: 70%;
+    height: 45px;
+    margin-bottom: 10px;
+    font-size: 1.4rem;
+    text-align: center;
+}
+#roomNoInput button{
+    font-size: 1.3rem;
+    padding: 5px 15px;
+    border-radius: 20px;
+    outline: none;
+    box-shadow: none;
+    cursor: pointer;
+    height: 45px;
+    position: relative;
+    overflow: hidden;
+    color: white;
+    font-weight: bold;
+    background-image: linear-gradient(to right, #02e7e7, #e701ea);
+}
+#roomNoInput button::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -50%;
+    width: 10px;
+    height: 100%;
+    background-color: rgb(200, 200, 200);
+    transform: skew(-20deg);
+    z-index: 1;
+    transition: all 0.25s ease-in-out;
+}
+
+#roomNoInput button:hover::before{
+    left: 110%;
+}
+
+#roomNoOutput{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: Helvetica, sans-serif;
+    font-size: 1.2rem;
+}
+#roomNoOutput h2{
+    background-image: linear-gradient(to right, #02e7e7,white 50%, #02e7e7);
+    background-clip:text;
+    color: transparent;
+    font-size: 2.5rem;
+}
+
+.error{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    width: 300px;
+    height: 45px;
+    text-align: center;
+    background-color: red;
+    border-radius: 10px;
+    color: white;
+    transition: all 0.15s ease-in-out;
+    overflow: hidden;
+    font-size: 1.7rem;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+.short{
+    width: 10%;
+    text-wrap: nowrap;
+}
+.hide{
+    visibility: hidden;
+}

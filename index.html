@@ -1,0 +1,415 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Insignia 2k24</title>
+    <link rel="stylesheet" href="./styles/styles.css" />
+    <link rel="stylesheet" href="./styles/styles2.css" />
+    <link rel="stylesheet" href="./styles/styles3.css" />
+    <link rel="stylesheet" href="./styles/styles4.css" />
+    <link rel="stylesheet" href="./styles/styles5.css" />
+    <link rel="stylesheet" href="./styles/styles6.css" />
+    <link rel="stylesheet" href="./styles/styles7.css" />
+    <link rel="stylesheet" href="./styles/styles8.css" />
+    <link rel="stylesheet" href="./styles/styles9.css" />
+    <link rel="stylesheet" href="./styles/styles10.css" />
+    <script src="./js/script.js" defer></script>
+    <link rel="icon" type="txt/x-icon" href="./assets/images/Insignia Logo.ico">
+  </head>
+  <body>
+    <div id="splash">
+      <img loading="eager" src="./assets/images/logo.png" />
+      <div class="loader">
+        <span class="loaderspan jump"></span>
+        <span class="loaderspan"></span>
+        <span class="loaderspan"></span>
+        <span class="loaderspan"></span>
+      </div>
+    </div>
+    <script>
+      var loaderSpan = document.getElementsByClassName('loaderspan');
+      let jumpCounter = 0;
+      setInterval(()=>{
+          loaderSpan[jumpCounter].classList.remove('jump');
+          jumpCounter = (jumpCounter+1)%4;
+          loaderSpan[jumpCounter].classList.add('jump');
+      },200);
+    </script>
+    <header>
+      <img loading="eager" src="./assets/images/Insignia Text.png" />
+      <input type="checkbox" id="showMenu" hidden>
+      <div class="showMenu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+      <nav>
+        <ul>
+          <a href="#aboutSection" class="scroll-link" style="text-decoration: none;color: white;"><li class="navLi">About Us</li></a>
+          <a href="#roundSection" class="scroll-link" style="text-decoration: none;color: white;"><li class="navLi">Rounds</li></a>
+          <a href="#contactSection" class="scroll-link" style="text-decoration: none;color: white;"><li class="navLi">Contact Us</li></a>
+          <a href="#faqSection" class="scroll-link" style="text-decoration: none;color: white;"><li class="navLi">FAQs</li></a>
+          <a href="roomNo.html" class="scroll-link" style="text-decoration: none;color: white;"><li class="navLi">Room No</li></a>
+          
+        </ul>
+      </nav>
+    </header>
+    <div id="registerButtonDiv">Register Now</div>
+    <article id="homeScreen">
+      <div id="mainContainer">
+        <div>
+          <img
+            src="./assets/images/tagline.svg"
+            class="animate up"
+          />
+          <p class="animate down">
+            The Department of
+            <span>Computer Science & Engineering (Data Science)</span> is back
+            with INSIGNIA 2k24, an inter-college event in association with IIC,
+            MCKVIE!
+          </p>
+        </div>
+        <div id="videoContainer">
+            <video src="./assets/videos/InsigniaTop.mp4" autoplay muted loop></video>
+        </div>
+      </div>
+    </article>
+    <article id="collegeLogo">
+        <div class="mainContainer">
+            <p class="animate left">Celebrating SILVER JUBILEE of MCKV Institue of Engineering with the first ever Data-Science event of MCKVIE</p>
+            <img loading="eager" src="./assets/images/collegelogo.png" class="animate right">
+        </div>
+    </article>
+    <article id="aboutSection">
+      <h2>What's <span>Insignia</span> 2k24?</h2>
+      <div id="mainContainer">
+        <div id="images" >
+            <img loading="lazy" width="300px" height="200px" src="./assets/images/About1.webp" class="imageInAbout animate left" alt="About1" loading="lazy">
+            <img loading="lazy" width="300px" height="200px" src="./assets/images/About2.jpg" class="imageInAbout animate left" alt="About2" loading="lazy">
+            <img loading="lazy" width="300px" height="200px" src="./assets/images/About3.jpg" class="imageInAbout animate left" alt="About3" loading="lazy">
+        </div>
+        <div id="writeup" class="animate right">
+          <p>The Department of Computer Science & Engineering (Data Science) proudly presents its new event: <b>“Insignia : Turn Data into Insights”</b>.</p>
+
+          <p>For the very first time, CSE-DS takes the centre stage with an event that promises to redefine possibilities. Insignia 2k24 is not just an event; it is a declaration of our commitment to innovation, excellence, and pushing boundaries of what is achievable.</p>
+            
+          <p>Embrace the excitement and embrace the future as we delve into a realm where data meets creativity, and technology meets imagination. Be a part of this remarkable journey as we set sail into uncharted waters, led by the spirit of discovery. The countdown to a healthier, more vibrant coding environment begins now!</p>
+            
+          <p>Today’s event, tomorrow’s tradition – an unbreakable chain begins!</p>
+        </div>
+      </div>
+    </article>
+    <article id="roundSection">
+      <h2>Round Details</h2>
+      <div id="mainContainer">
+        <div class="card animate">
+          <div class="front">
+            <img loading="lazy" src="./assets/images/About1.webp" alt="Inaugeration">
+            <h2>Inauguration</h2>
+            <span class="knowmorebtn">Know More</span>
+          </div>
+          <div class="back">
+            <h2>Inauguration</h2>
+            <p>As we embark on this exciting endeavor, we will commence Insignia 2k24 with a heartfelt inauguration ceremony</p>
+            <span class="knowlessbtn">Go Back</span>
+          </div>
+        </div>
+        <div class="card animate">
+          <div class="front">
+            <img loading="lazy" src="./assets/images/aptitude-test.webp" alt="Inaugeration">
+            <h2>AptiCode Quest</h2>
+            <span class="knowmorebtn">Know More</span>
+          </div>
+          <div class="back">
+            <h2>AptiCode Quest</h2>
+            <p>This round sets the stage for your coding odyssey, testing your foundation and setting you on the path to glory. Top 20 teams will qualify for Round 2.</p>
+            <span class="knowlessbtn">Go Back</span>
+          </div>
+        </div>
+        <div class="card animate">
+          <div class="front">
+            <img loading="lazy" src="./assets/images/refreshments.webp" alt="Inaugeration">
+            <h2>Refreshment Break</h2>
+            <span class="knowmorebtn">Know More</span>
+          </div>
+          <div class="back">
+            <h2>Refreshment Break</h2>
+            <p>🔔 Every team which qualifies for round 2, lunch will be provided! 🥗</p>
+            <span class="knowlessbtn">Go Back</span>
+          </div>
+        </div>
+        <div class="card animate">
+          <div class="front">
+            <img loading="lazy" src="./assets/images/round2.avif" alt="Inaugeration">
+            <h2>Code X Eliminator</h2>
+            <span class="knowmorebtn">Know More</span>
+          </div>
+          <div class="back">
+            <h2>Code X Eliminator</h2>
+            <p>Survival of the fittest coders! Every line of code you write inches you closer to victory in this exhilarating elimination round. Top 5/6 teams will qualify for the final round.</p>
+            <span class="knowlessbtn">Go Back</span>
+          </div>
+        </div>
+        <div class="card animate">
+          <div class="front">
+            <img loading="lazy" src="./assets/images/round3.jpg" alt="Inaugeration">
+            <h2>Illustra</h2>
+            <span class="knowmorebtn">Know More</span>
+          </div>
+          <div class="back">
+            <h2>Illustra</h2>
+            <p>Here's where secrets and challenges converge. It is a test of your skills and your ability to think beyond convention.</p>
+            <span class="knowlessbtn">Go Back</span>
+          </div>
+        </div>
+        <div class="card animate">
+          <div class="front">
+            <img loading="lazy" src="./assets/images/Prize.png" alt="Prize Distribution">
+            <h2>Prize Distribution</h2>
+            <span class="knowmorebtn">Know More</span>
+          </div>
+          <div class="back">
+            <h2>Prize Distribution</h2>
+            <p>🏆 Prizes worth &#8377;6000/- for winners! 🎁 Participation certificate for all participants ⭐ Every team which qualifies for round 2, lunch will be provided! 🥗</p>
+            <span class="knowlessbtn">Go Back</span>
+          </div>
+        </div>
+      </div>
+    </article>
+    <article id="contactSection">
+      <h2>Members</h2>
+      <div id="mainContainer">
+        <div class="contactCard first member">
+          <div class="imageHolder"><img loading="lazy" width="250px" height="300px" src="./assets/ids/Rahul Singh.jpg" alt="ID"></div>
+          <h2>Rahul Singh</h2>
+        </div>
+        <div class="contactCard member">
+          <div class="imageHolder"><img loading="lazy" width="250px" height="300px" src="./assets/ids/Amisha Agarwal.jpeg" alt="ID"></div>
+          <h2>Amisha Agarwal</h2>
+        </div>
+        <div class="contactCard member">
+          <div class="imageHolder"><img loading="lazy" width="250px" height="300px" src="./assets/ids/Arkaprava Laha.jpg" alt="ID"></div>
+          <h2>Arkaprava Laha</h2>
+        </div>
+        <div class="contactCard member">
+          <div class="imageHolder"><img loading="lazy" width="250px" height="300px" src="./assets/ids/Mahika Thakur.JPG" alt="ID"></div>
+          <h2>Mahika Thakur</h2>
+        </div>
+        <div class="contactCard member">
+          <div class="imageHolder"><img loading="lazy" width="250px" height="300px" src="./assets/ids/Rupsa Nandy.jpg" alt="ID"></div>
+          <h2>Rupsa Nandy</h2>
+        </div>
+        <div class="contactCard member">
+          <div class="imageHolder"><img loading="lazy" width="250px" height="300px" src="./assets/ids/Sreejeeta Dutta.jpg" alt="ID"></div>
+          <h2>Sreejeeta Dutta</h2>
+        </div>
+        <div class="contactCard member">
+          <div class="imageHolder"><img loading="lazy" width="250px" height="300px" src="./assets/ids/Shubhrajit Sarkar.jpg" alt="ID"></div>
+          <h2>Shubhrajit Sarkar</h2>
+        </div>
+        <div class="contactCard member">
+          <div class="imageHolder"><img loading="lazy" width="250px" height="300px" src="./assets/ids/Sayari Das.jpg" alt="ID"></div>
+          <h2>Sayari Das</h2>
+        </div>
+        <div class="contactCard member">
+          <div class="imageHolder"><img loading="lazy" width="250px" height="300px" src="./assets/ids/Anirban Chakraborty.jpg" alt="ID"></div>
+          <h2>Anirban Chakraborty</h2>
+        </div>
+        <div class="contactCard member">
+          <div class="imageHolder"><img loading="lazy" width="250px" height="300px" src="./assets/ids/Krittika Choudhuri.jpeg" alt="ID"></div>
+          <h2>Krittika Choudhuri</h2>
+        </div>
+        <div class="contactCard member">
+          <div class="imageHolder"><img loading="lazy" width="250px" height="300px" src="./assets/ids/Srijita Ghorai.jpg" alt="ID"></div>
+          <h2>Srijita Ghoria</h2>
+        </div>
+        <div class="contactCard member">
+          <div class="imageHolder"><img loading="lazy" width="250px" height="300px" src="./assets/ids/Soham Deb.jpg" alt="ID"></div>
+          <h2>Soham Deb</h2>
+        </div>
+        <div class="contactCard member">
+          <div class="imageHolder"><img loading="lazy" width="250px" height="300px" src="./assets/ids/Sreyasree Sasmal.jpg" alt="ID"></div>
+          <h2>Sreyasree Sasmal</h2>
+        </div>
+        <div class="contactCard member">
+          <div class="imageHolder"><img loading="lazy" width="250px" height="300px" src="./assets/ids/Bhargab Banerjee.jpg" alt="ID"></div>
+          <h2>Bhargab Banerjee</h2>
+        </div>
+        <div class="contactCard member">
+          <div class="imageHolder"><img loading="lazy" width="250px" height="300px" src="./assets/ids/Kevin Steve Domingo .jpg" alt="ID"></div>
+          <h2>Kevin Steve Domingo</h2>
+        </div>
+        <div class="contactCard member">
+          <div class="imageHolder"><img loading="lazy" width="250px" height="300px" src="./assets/ids/Archana Rai.jpg" alt="ID"></div>
+          <h2>Archana Rai</h2>
+        </div>
+        <div class="contactCard member">
+          <div class="imageHolder"><img loading="lazy" width="250px" height="300px" src="./assets/ids/Shubhankar Pal.jpeg" alt="ID"></div>
+          <h2>Shubhankar Pal</h2>
+        </div>
+        <div class="contactCard member">
+          <div class="imageHolder"><img loading="lazy" width="250px" height="300px" src="./assets/ids/Hriti Majumdar.jpg" alt="ID"></div>
+          <h2>Hriti Majumdar</h2>
+        </div>
+        <div class="contactCard member">
+          <div class="imageHolder"><img loading="lazy" width="250px" height="300px" src="./assets/ids/Prasun Kumar.jpg" alt="ID"></div>
+          <h2>Prasun Kumar</h2>
+        </div>
+      </div>
+      <h2>Contact Us</h2>
+      <div id="contactUs">
+        <div class="contactCard">
+          <div class="imageHolder"><img loading="eager" width="250px" height="300px" src="./assets/ids/Rahul Singh.jpg" alt="ID"></div>
+          <h2>Rahul Singh</h2>
+          <button onclick="window.open('https:\/\/wa.me/916290516034', '_blank');"><img src="./assets/images/cib-whatsapp.svg"></button>
+        </div>
+        <div class="contactCard">
+          <div class="imageHolder"><img loading="eager" width="250px" height="300px" src="./assets/ids/Sreejeeta Dutta.jpg" alt="ID"></div>
+          <h2>Sreejeeta Dutta</h2>
+          <button onclick="window.open('https:\/\/wa.me/917278194815', '_blank');"><img src="./assets/images/cib-whatsapp.svg"></button>
+        </div>
+      </div>
+    </article>
+    <article id="faqSection">
+      <h2>FAQs</h2>
+      <div id="mainContainer">
+        <div class="faqCard">
+          <input type="checkbox" name="showAnswer" id="showAnswer1" hidden>
+          <label for="showAnswer1">
+            <div class="question">
+              <p>What is Insignia?</p>
+              <img class="plus-icon" src="./assets/images/cil-plus.svg" />
+            </div>
+          </label>
+          <div class="answer">
+            <p>Insignia is a technical coding event organized by the Computer Science and Engineering (Data Science) department of MCKVIE.</p>
+          </div>
+        </div>
+        <div class="faqCard">
+          <input type="checkbox" name="showAnswer" id="showAnswer2" hidden>
+          <label for="showAnswer2">
+            <div class="question">
+              <p>What are the rules for making a team?</p>
+              <img class="plus-icon" src="./assets/images/cil-plus.svg" />
+            </div>
+          </label>
+          <div class="answer">
+            <p>Each team should consist of 2 members. Cross department team formation is allowed</p>
+          </div>
+        </div>
+        <div class="faqCard">
+          <input type="checkbox" name="showAnswer" id="showAnswer3" hidden>
+          <label for="showAnswer3">
+            <div class="question">
+              <p>How can I participate?</p>
+              <img class="plus-icon" src="./assets/images/cil-plus.svg" />
+            </div>
+          </label>
+          <div class="answer">
+            <p>Click on the Register Now Button. There you will find a link to a Google Form. Fill it up with the neccesary details and make your payment.</p>
+          </div>
+        </div>
+        <div class="faqCard">
+          <input type="checkbox" name="showAnswer" id="showAnswer4" hidden>
+          <label for="showAnswer4">
+            <div class="question">
+              <p>Participation cost in Insignia 2k24 ?</p>
+              <img class="plus-icon" src="./assets/images/cil-plus.svg" />
+            </div>
+          </label>
+          <div class="answer">
+            <p>For each team, the participation fee is ₹70 for MCKVIE students, ₹100 for outside students.</p>
+          </div>
+        </div>
+        <div class="faqCard">
+          <input type="checkbox" name="showAnswer" id="showAnswer5" hidden>
+          <label for="showAnswer5">
+            <div class="question">
+              <p>Who will get refreshments?</p>
+              <img class="plus-icon" src="./assets/images/cil-plus.svg" />
+            </div>
+          </label>
+          <div class="answer">
+            <p>All team members who get in round 2 will get refreshments. </p>
+          </div>
+        </div>
+        <div class="faqCard">
+          <input type="checkbox" name="showAnswer" id="showAnswer6" hidden>
+          <label for="showAnswer6">
+            <div class="question">
+              <p>When will winners be declared?</p>
+              <img class="plus-icon" src="./assets/images/cil-plus.svg" />
+            </div>
+          </label>
+          <div class="answer">
+            <p>The winners will be announced after each round. Teams getting the 1st, 2nd and 3rd position in the last round will step on the podium.</p>
+          </div>
+        </div>
+        <div class="faqCard">
+          <input type="checkbox" name="showAnswer" id="showAnswer7" hidden>
+          <label for="showAnswer7">
+            <div class="question">
+              <p>What are the winning Prizes?</p>
+              <img class="plus-icon" src="./assets/images/cil-plus.svg" />
+            </div>
+          </label>
+          <div class="answer">
+            <p>🏆Prizes are suprises. Prize pool is ₹6000/-🎁</p>
+          </div>
+        </div>
+        <div class="faqCard">
+          <input type="checkbox" name="showAnswer" id="showAnswer8" hidden>
+          <label for="showAnswer8">
+            <div class="question">
+              <p>Is InterCollege team permissible?</p>
+              <img class="plus-icon" src="./assets/images/cil-plus.svg" />
+            </div>
+          </label>
+          <div class="answer">
+            <p>No, the teams should be Intracollege. Cross department teams are accepted.</p>
+          </div>
+        </div>
+      </div>
+    </article>
+    <article id="sponsorsSection">
+      <h3>Our Sponsors</h3>
+      <div id="mainContainer">
+        <div class="card">
+          <div class="front">
+            <img loading="lazy" width="250px" height="300px" src="./assets/images/desun-academy-logo-new.jpg">
+            <h2>Desun Academy</h2>
+            <span class="knowmorebtn">Know More</span>
+          </div>
+          <div class="back">
+            <h2>Desun Academy</h2>
+            <p><a href="https://www.desunacademy.com/" target="_blank" style="color: white;font-size: 1.2rem;">Visit their Site</a></p>
+            <span class="knowlessbtn">Go Back</span>
+          </div>
+        </div>
+      </div>
+    </article>
+    <footer>
+      <div id="mainContainer">
+        <div class="leftSide">
+          <h3>Connect With Us</h3>
+          <ul>
+            <a href="https://www.instagram.com/insignia2k24/profilecard/?igsh=MTBsZWVmcnNqeWxzMg==">
+              <li><img src="./assets/images/cib-instagram.svg" />Instagram
+            </li></a>
+            <a href="https://insignia-2k24.netlify.app/">
+              <li><img src="./assets/images/Insignia Logo.ico" />Insignia Website
+            </li></a>
+            <a href="https://www.mckvie.edu.in/">
+              <li><img src="./assets/images/collegelogo.png" />MCKV Institute of Engineering
+            </li></a>
+          </ul>
+        </div>
+        <div class="rightSide">
+          <h3>Find Us</h3>
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3682.915191780638!2d88.34512757587297!3d22.619641931243432!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39f89d65da7b3775%3A0x30915f7e98f1b0d5!2sMCKV%20Institute%20of%20Engineering!5e0!3m2!1sen!2sin!4v1728501532805!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

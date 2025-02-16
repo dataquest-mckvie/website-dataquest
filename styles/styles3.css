@@ -1,0 +1,146 @@
+/* Home Screen Section */
+article#homeScreen{
+    position: relative;
+    top: 10vh;
+    display: flex;
+    width: 95vw;
+    min-height: 100vh;
+    margin: auto;
+    justify-content: center;
+    overflow-x: hidden;
+}
+article#homeScreen #mainContainer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: 20px;
+}
+article#homeScreen div#mainContainer div{
+    position: relative;
+    background-color: rgb(20, 20, 20);
+    padding: 15px 15px 25px 15px;
+    overflow: visible;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+article#homeScreen #mainContainer div img{
+    margin-bottom: 25px;
+    scale: 1;
+    transition: all 0.5s ease-in-out;
+    width: 600px;
+}
+article#homeScreen #mainContainer div p{
+    display: inline-block;
+    color: white;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    text-align: justify;
+    transition: all 0.8s ease-in-out;
+    text-align: justify;
+}
+article#homeScreen #mainContainer div p span{
+    font-size: 1.5rem;
+    font-weight: bolder;
+    color: #e701ea;
+    transition: all 0.15s ease-in-out;
+    cursor: pointer;
+}
+article#homeScreen #mainContainer div p span:hover{
+    color: #02e7e7;
+}
+.animate{
+    opacity: 0.2;
+    position: relative;
+}
+.up{
+    top: -20px;
+}
+.down{
+    top: 20px;
+}
+.left{
+    left: -15px;
+}
+.right{
+    left: 15px;
+}
+.getUp{
+    left: 0;
+    top: 0;
+    opacity: 1;
+}
+
+article#homeScreen div#mainContainer div:first-child{
+    max-width: 700px;
+}
+article#homeScreen div#mainContainer div:first-child img{
+    width: 100%;
+}
+article#homeScreen div#mainContainer div:first-child:before{
+    content: '';
+    position: absolute;
+    width: 40%;
+    height: 50px;
+    top: -15px;
+    left: -15px;
+    background: linear-gradient(to right, #e701ea, #02e7e7);
+    z-index: -1;
+}
+article#homeScreen div#mainContainer div:first-child:after{
+    content: '';
+    position: absolute;
+    width: 40%;
+    height: 50px;
+    bottom: -15px;
+    right: -15px;
+    background: linear-gradient(to left, #e701ea, #02e7e7);
+    z-index: -1;
+}
+
+@media only screen and (max-width: 1200px){
+    article#homeScreen div#mainContainer{
+        flex-direction: column;
+        row-gap: 40px;
+    }
+    article#homeScreen div#mainContainer div{
+        width: 90vw;
+    }
+    
+    article#homeScreen div#videoContainer{
+        width: 95vw;
+    }
+    article#homeScreen div#videoContainer video{
+        width: 90%;
+        height: 550px;
+    }
+}
+@media only screen and (max-width: 1085px){
+    article#homeScreen div#mainContainer div img{
+        width: 350px;
+    }
+}
+@media only screen and (max-width: 600px){
+    article#homeScreen div#mainContainer{
+        flex-direction: column;
+        row-gap: 40px;
+    }
+    article#homeScreen{
+        min-height: 80vh;
+        padding-top: 10px;
+    }
+    article#homeScreen div#mainContainer div img{
+        width: 300px;
+    }
+    article#homeScreen div#mainContainer div p{
+        font-size: 0.8rem;
+        & span{
+            font-size: 1rem;
+        }
+    }
+    article#homeScreen div#videoContainer video{
+        width: 90%;
+        height: 450px;
+    }
+}

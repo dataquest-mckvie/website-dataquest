@@ -1,0 +1,152 @@
+article#contactSection{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: rgb(70, 70, 70);
+    padding: 20px;
+    gap: 25px;
+    overflow-x : hidden;
+    overflow-y: hidden;
+    height: max-content;
+}
+article#contactSection h2{
+    color: white;
+    font-size: 3rem;
+    width: 100%;
+    text-align: center;
+}
+article#contactSection div#mainContainer, article#contactSection div#contactUs{
+    height: 400px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    gap: 25px;
+    left: 20%;
+    width: max-content;
+}
+article#contactSection div#mainContainer::-webkit-scrollbar, article#contactSection div#contactUs::-webkit-scrollbar{
+    width: 100%;
+    height: 4px;
+    background-color: rgb(185, 185, 185);
+}
+article#contactSection div#mainContainer::-webkit-scrollbar-thumb, article#contactSection div#contactUs::-webkit-scrollbar-thumb{
+    background-color: aqua;
+}
+article#contactSection div#mainContainer div.contactCard, article#contactSection div#contactUs div.contactCard{
+    width: 350px;
+    padding: 20px;
+    border-radius: 10px;
+    text-wrap: wrap;
+    margin-bottom: 20px;
+    cursor: pointer;
+    background-color: rgb(40, 40, 40);
+    transition: all 0.5s ease-in-out;
+}
+article#contactSection div#mainContainer div.contactCard h2{
+    font-size: 2rem;
+}
+article#contactSection div#contactUs div.contactCard h2{
+    font-size: 2rem;
+}
+article#contactSection div#mainContainer div.contactCard div.imageHolder{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+article#contactSection div#contactUs div.contactCard div.imageHolder{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+article#contactSection div#mainContainer div.contactCard img{
+    width: 250px;
+    height: 300px;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+article#contactSection div#contactUs div.contactCard img{
+    width: 250px;
+    height: 300px;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+article#contactSection div#mainContainer div.contactCard.first{
+    margin-left: 0%;
+}
+article#contactSection div#contactUs div.contactCard.first{
+    margin-left: 0%;
+}
+div.contactCard h2{
+    font-size: 2rem;
+}
+div.contactCard div.imageHolder{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+article#contactSection div#contactUs{
+    height: unset;
+    gap: 10px;
+    left: 0;
+    width: 100%;
+    justify-content: center;
+}
+article#contactSection div#contactUs div.contactCard{
+    width: 350px;
+    position: relative;
+}
+article#contactSection div#contactUs div.contactCard div.imageHolder{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+article#contactSection div#contactUs div.contactCard button img{
+    display: inline-block;
+    margin: 0;
+    width: 40px;
+    height: 40px;
+    filter: invert(68%) sepia(60%) saturate(445%) hue-rotate(85deg) brightness(90%) contrast(90%);
+}
+article#contactSection div#contactUs div.contactCard button{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: transparent;
+    backdrop-filter: blur(20px);
+    width: 70px;
+    height: 70px;
+    position: absolute;
+    top: 50%;
+    right: 0;
+    transform: translateY(-50%);
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    border: 1px solid black;
+    border-right: none;
+    cursor: pointer;    
+}
+@media only screen and (max-width: 800px){
+    article#contactSection div#mainContainer{
+        left: 0%;
+    }
+    article#contactSection div#mainContainer div.contactCard{
+        width: 90vw;
+    }
+    article#contactSection div#mainContainer div.contactCard h2{
+        font-size: 1.4rem;
+    }
+    article#contactSection div#contactUs{
+        flex-direction: column;
+    }
+    article#contactSection div#contactUs div.contactCard{
+        width: 100%;
+    }
+    article#contactSection div#contactUs div.contactCard h2{
+        font-size: 1.4rem;
+    }
+}

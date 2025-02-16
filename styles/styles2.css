@@ -1,0 +1,126 @@
+/* Header Section */
+header{
+    width: 100vw;
+    height: fit-content;
+    display: grid;
+    grid-template-columns: 45% 55%;
+    grid-template-rows: auto;
+    place-items: center;
+    position: fixed;
+    padding: 20px;
+    z-index: 101;
+    backdrop-filter: blur(20px);
+}
+header img{
+    position: relative;
+    max-width: 300px;
+    min-width: 60px;
+    width: 100%;
+}
+header div.showMenu{
+    display: none;
+    cursor: pointer;
+}
+header nav{
+    width: 100%;
+    padding: 2px;
+}
+header nav ul{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+    font-size: 1.1rem;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+header nav ul a:not(:last-child){
+    margin-right: 15px;
+}
+header nav ul a:last-child li{
+    background-color: #02e7e7;
+    color: black;
+    border-radius: 20px;
+}
+header nav ul li{
+    text-wrap: nowrap;
+    border: 1px solid transparent;
+    color: white;
+    border-radius: 15px;
+    padding: 10px;
+    cursor: pointer;
+    transition: all 0.1s ease-in-out;
+}
+header nav ul a li:hover{
+    border: 1px solid transparent;
+    background-color: unset;
+    background-color: #e701ea;
+    color: white;
+}
+
+
+@media only screen and (max-width: 950px){
+    header div.showMenu{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        row-gap: 5px;
+        position: absolute;
+        right: 5%;
+        z-index: 102;
+    }
+    div.showMenu span{
+        display: block;
+        width: 40px;
+        height: 3px;
+        background-color: white;
+        margin: unset;
+        transition: all 0.3s ease-in-out;
+    }
+    div.showMenu span:first-child{
+        top: 0;
+    }
+    div.showMenu span:last-child{
+        bottom: 0;
+    }
+    header{
+        backdrop-filter: unset;
+        background: rgb(21, 21, 21, 21);
+    }
+    header nav{
+        width: 100vw;
+        height:100vh;
+        position: fixed;
+        top: 0;
+        right: -100%;
+        left: 100%;
+        bottom: 0;
+        backdrop-filter: blur(20px);
+        transition: all 0.3s ease-in-out;
+    }
+    header nav ul{
+        width: 50%;
+        position: absolute;
+        height: 100%;
+        right: 0;
+        flex-direction: column;
+        align-items: flex-start;
+        font-size: 1.5rem;
+    }
+    header nav.show{
+        right: 0;
+        left: 0;
+    }
+    div.showMenu.shown span:first-child{
+        transform: translateY(-5px) rotateZ(40deg);
+        transform-origin: left;
+    }
+    div.showMenu.shown span:nth-child(2){
+        visibility: hidden;
+    }
+    div.showMenu.shown span:last-child{
+        transform: translateY(5px) rotateZ(-40deg);
+        transform-origin: left;
+    }
+}

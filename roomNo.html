@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Room Number Query</title>
+    <link rel="stylesheet" href="./styles/styles.css" />
+    <link rel="stylesheet" href="./styles/styles2.css" />
+    <link rel="stylesheet" href="./styles/styles11.css">
+    <script src="./js/script.js" defer></script>
+    <script src="./js/roomNumber.js" defer></script>
+    <link rel="icon" type="txt/x-icon" href="./assets/images/Insignia Logo.ico">
+</head>
+
+<body>
+    <header>
+        <img loading="eager" src="./assets/images/Insignia Text.png" />
+        <input type="checkbox" id="showMenu" hidden>
+        <div class="showMenu">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+        <nav>
+            <ul>
+                <a href="./index.html#aboutSection" class="scroll-link" style="text-decoration: none;color: white;">
+                    <li class="navLi">About Us</li>
+                </a>
+                <a href="./index.html#roundSection" class="scroll-link" style="text-decoration: none;color: white;">
+                    <li class="navLi">Rounds</li>
+                </a>
+                <a href="./index.html#contactSection" class="scroll-link" style="text-decoration: none;color: white;">
+                    <li class="navLi">Contact Us</li>
+                </a>
+                <a href="./index.html#faqSection" class="scroll-link" style="text-decoration: none;color: white;">
+                    <li class="navLi">FAQs</li>
+                </a>
+                <a href="roomNo.html" class="scroll-link" style="text-decoration: none;color: white;">
+                    <li class="navLi">Room No</li>
+                </a>
+
+            </ul>
+        </nav>
+    </header>
+    <div id="roomNoBox">
+        <div id="roomNoInput">
+            <label for="roomInput">Enter the Bill Number</label>
+            <input type="number" name="roomInput" id="roomInput" placeholder="17301" min="17301" max="17511">
+            <button id="searchRoom">Search</button>
+        </div>
+        <div id="roomNoOutput">
+            <p>Your room number is</p>
+            <h2 id="roomOutput">A???</h2>
+        </div>
+    </div>
+    <div class="error short hide">
+        <h4 id="errorText">Invaild Bill Number</h4>
+    </div>
+</body>
+
+</html>
