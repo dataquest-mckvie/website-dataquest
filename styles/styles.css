@@ -20,7 +20,7 @@ article{
     z-index: 110;
 }
 #splash img:first-child{
-    width: 50vw;
+    width: 30vw;
     margin-bottom: 30px;
     scale: 0.9;
     animation: getBigger 2s infinite alternate;
