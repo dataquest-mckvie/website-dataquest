@@ -70,3 +70,19 @@ setInterval(()=>{
     first.style.marginLeft = "-"+(scrollLeft)+"px";
     scrollCounter = (scrollCounter + 1) % (totalScrolls+1);
 }, 1500);
+
+const underConstruction = document.getElementsByClassName("underConstruction")[0];
+const splashScreen = document.getElementById("splash");
+var start = Date.now();
+window.addEventListener('load', ()=>{
+    var present = Date.now();
+    if ((present-start)<1000){
+        setTimeout(()=>{
+            splashScreen.style.visibility = 'hidden';
+            underConstruction.style.display = "flex";
+        }, 1000);
+    }else{
+        splashScreen.style.visibility = "hidden";
+        underConstruction.style.display = "flex";
+    }
+})
