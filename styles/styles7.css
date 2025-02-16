@@ -66,12 +66,14 @@ article#contactSection div#mainContainer div.contactCard img{
     height: 300px;
     border-radius: 10px;
     margin-bottom: 10px;
+    object-fit: cover;
 }
 article#contactSection div#contactUs div.contactCard img{
     width: 250px;
     height: 300px;
     border-radius: 10px;
     margin-bottom: 10px;
+    object-fit: cover;
 }
 article#contactSection div#mainContainer div.contactCard.first{
     margin-left: 0%;
